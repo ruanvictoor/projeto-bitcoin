@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@font-face {
+
+    font-family: 'Bitcoin';
+    src: url('../fontes/Bitcoin.ttf') format('opentype');
+    font-weight: normal;
+}
+
+.externo::after {
+    content: '\00A0\1F517';
+}
+
+.cripto {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+:root {
+    --cor0: #ffe99a;
+    --cor1: #eecf6b;
+    --cor2: #d3ba55;
+    --cor3: #807b42;
+    --cor4: #6d6736;
+    --cor5: #4e4e00;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Oswald', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: var(--cor5);
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 20px;
+    
+}
+
+main h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor5);
+    font-size: 2em;
+    margin: 10px;
+    
+}
+
+main h2 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    font-size: 1.5em;
+    margin: 10px;
+    text-indent: 8px;
+}
+
+main p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5em;
+    margin: 15px 0px;
+
+}
+
+main strong {
+    background-color: var(--cor0);
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+
+main a {
+    text-decoration: none;
+    padding: 2px 6px;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    color: black;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+main img {
+    width: 100%;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px 20px 30px 20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.507);
+    margin-bottom: 10px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 5px;
+}
